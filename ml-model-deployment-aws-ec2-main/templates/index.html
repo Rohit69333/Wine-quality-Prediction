@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wine Quality Predictor</title>
+</head>
+<body>
+
+    <h1>Wine Quality Predictor</h1>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+    <form method="post" action="/predict">
+        <label>fixed acidity</label><br>
+        <input type="text" name="fixed_acidity"><br><br>
+
+        <label>volatile acidity</label><br>
+        <input type="text" name="volatile_acidity"><br><br>
+
+        <label>citric acid</label><br>
+        <input type="text" name="citric_acid"><br><br>
+
+        <label>residual sugar</label><br>
+        <input type="text" name="residual_sugar"><br><br>
+
+        <label>chlorides</label><br>
+        <input type="text" name="chlorides"><br><br>
+
+        <label>free sulfur dioxide</label><br>
+        <input type="text" name="free_sulfur_dioxide"><br><br>
+
+        <label>total sulfur dioxide</label><br>
+        <input type="text" name="total_sulfur_dioxide"><br><br>
+
+        <label>density</label><br>
+        <input type="text" name="density"><br><br>
+
+        <label>pH</label><br>
+        <input type="text" name="pH"><br><br>
+
+        <label>sulphates</label><br>
+        <input type="text" name="sulphates"><br><br>
+
+        <label>alcohol</label><br>
+        <input type="text" name="alcohol"><br><br>
+          
+          
+
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+
+</body>
+</html>
